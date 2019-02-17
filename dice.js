@@ -47,7 +47,7 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
         scores[activePlayer] += roundScore;
         document.getElementById('current-' + activePlayer).textContent = roundScore;
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
-        if(scores[activePlayer] >= 10){
+        if(scores[activePlayer] >= 100){
             document.querySelector('#name-' + activePlayer).textContent = 'WINNER!!';
             document.querySelector('.dice').style.display = 'none';
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
